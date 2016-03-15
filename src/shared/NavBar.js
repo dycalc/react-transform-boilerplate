@@ -22,7 +22,7 @@ class NavBar extends Component {
     };
     return (
       <div className="app-header">
-        <Tabs tabItemContainerStyle={{ backgroundColor: 'transparent' }} styles={styles.tabs} inkBarStyle={styles.inkBar}>
+        <Tabs tabItemContainerStyle={{ backgroundColor: 'transparent' }} style={styles.tabs} inkBarStyle={styles.inkBar} >
           <Tab style={styles.tabs} label="home" />
           <Tab style={styles.tabs} label="Account" />
           <Tab style={styles.tabs} label="About" />
