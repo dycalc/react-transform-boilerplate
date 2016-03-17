@@ -5,9 +5,9 @@ import NavBar from './shared/NavBar';
 class App extends Component {
   render() {
     return (
-      <div className="app-wrap">        
+      <div className="app-wrap">
         <NavBar />
-        <Home />
+        {this.props.children}
         <div className="app-footer">My Footer</div>
       </div>
     );
