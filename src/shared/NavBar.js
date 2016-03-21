@@ -51,12 +51,12 @@ class NavBar extends Component {
     return (
       <div className="app-header">
         <Tabs tabItemContainerStyle={{ backgroundColor: 'transparent' }}
-        style={styles.tabs} inkBarStyle={styles.inkBar}
-        onChange={this._handleTabsChange.bind(this)}
-        value={this.state.value}>
-          <Tab style={styles.tabs} value="/home" label="home" />
-          <Tab style={styles.tabs} value="/account" label="Account" />
-          <Tab style={styles.tabs} value="/about" label="About" />
+              style={styles.tabs} inkBarStyle={styles.inkBar}
+              onChange={this._handleTabsChange.bind(this)}
+              value={this.state.value}>
+          <Tab style={styles.tab} value="/home" label="Home" />
+          <Tab style={styles.tab} value="/account" label="Account" />
+          <Tab style={styles.tab} value="/about" label="About" />
         </Tabs>
       </div>
     );
@@ -64,7 +64,7 @@ class NavBar extends Component {
 }
 
 NavBar.contextTypes = {
-  router: React.PropTypes.object.isRequired
+    router: React.PropTypes.object.isRequired
 };
 
 export default NavBar;
